@@ -25,6 +25,7 @@
     padding: 15px;
     text-align: center;
     background-color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 .gallery-img:hover {

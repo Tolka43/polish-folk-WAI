@@ -5,10 +5,94 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
-  <!-- <link rel="manifest" href="/site.webmanifest"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="magnific-popup/jquery.magnific-popup.js"></script>
+  <script>$(document).ready(function () {
+      $('.photos-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {
+          enabled: true
+        }
+      });
+    });
+    $(function () {
+      $(".narodowy").dialog({
+        autoOpen: false,
+        show: {
+          effect: "blind",
+          duration: 1000
+        }
+      });
+
+      $(".lasowiak").dialog({
+        autoOpen: false,
+        show: {
+          effect: "blind",
+          duration: 1000
+        }
+      });
+      $(".lowicki").dialog({
+        autoOpen: false,
+        show: {
+          effect: "blind",
+          duration: 1000
+        }
+      });
+
+      $(".lubelski").dialog({
+        autoOpen: false,
+        show: {
+          effect: "blind",
+          duration: 1000
+        }
+      });
+      $(".rzeszowski").dialog({
+        autoOpen: false,
+        show: {
+          effect: "blind",
+          duration: 1000
+        }
+      });
+
+      $(".krakowski").dialog({
+        autoOpen: false,
+        show: {
+          effect: "blind",
+          duration: 1000
+        }
+      });
+
+      $(".narodowy-opener").on("click", function () {
+        $(".narodowy").dialog("open");
+      });
+      $(".lasowiak-opener").on("click", function () {
+        $(".lasowiak").dialog("open");
+      });
+
+      $(".lowicki-opener").on("click", function () {
+        $(".lowicki").dialog("open");
+      });
+      $(".lubelski-opener").on("click", function () {
+        $(".lubelski").dialog("open");
+      });
+      $(".rzeszowski-opener").on("click", function () {
+        $(".rzeszowski").dialog("open");
+      });
+      $(".krakowski-opener").on("click", function () {
+        $(".krakowski").dialog("open");
+      });
+
+    });
+  </script>
 
   <title>Tańce ludowe</title>
 </head>
@@ -36,52 +120,87 @@
       <div class="gallery-item">
         <a target="_blank" href="../img/kontusz-szlachecki.jpg">
           <img class="gallery-img" src="../img/kontusz-szlachecki.jpg" alt=""></a>
-        <div class="img-descr">kontusz szlachecki</div>
+        <div class="narodowy-opener img-descr">strój narodowy</div>
       </div>
       <div class="gallery-item">
         <a target="_blank" href="../img/stroj-lasowiacki.jpg">
           <img class="gallery-img" src="../img/stroj-lasowiacki.jpg" alt=""></a>
-        <div class="img-descr">strój lasowiacki</div>
+        <div class="lasowiak-opener img-descr">strój lasowiacki</div>
       </div>
       <div class="gallery-item">
         <a href="../img/stroj-lowicki.jpg" target="_blank">
           <img class="gallery-img" src="../img/stroj-lowicki.jpg" alt=""></a>
-        <div class="img-descr">strój łowicki</div>
+        <div class="lowicki-opener img-descr">strój łowicki</div>
       </div>
       <div class="gallery-item">
         <a target="_blank" href="../img/stroj-lubelski.jpg">
           <img class="gallery-img" src="../img/stroj-lubelski.jpg" alt=""></a>
-        <div class="img-descr">strój lubelski</div>
+        <div class="lubelski-opener img-descr">strój lubelski</div>
       </div>
       <div class="gallery-item">
         <a target="_blank" href="../img/stroj-rzeszowski.jpg">
           <img class="gallery-img" src="../img/stroj-rzeszowski.jpg" alt=""></a>
-        <div class="img-descr">strój rzeszowski</div>
+        <div class="rzeszowski-opener img-descr">strój rzeszowski</div>
       </div>
       <div class="gallery-item">
         <a target="_blank" href="../img/stroj-krakowski.jpg">
           <img class="gallery-img" src="../img/stroj-krakowski.jpg" alt=""></a>
-        <div class="img-descr">strój krakowski</div>
+        <div class="krakowski-opener img-descr">strój krakowski</div>
       </div>
+    </div>
+    <button id="opener">otworz modal</button>
+    <div class="narodowy" title="strój narodowy">
+      <p>(znany też jako strój polski, polski strój szlachecki lub strój kontuszowy) <br>
+        ubiór wywodzący się od paradnego
+        stroju noszonego przez szlachtę na terenie Rzeczypospolitej w XVIII wieku, który w okresie zaborów stał się
+        strojem polskim o charakterze ogólnonarodowym. W odróżnieniu od strojów ludowych noszonych tylko przez niższe
+        stany społeczne i tylko w poszczególnych regionach, polski strój narodowy używany był na terenie całej dawnej
+        Polski. W okresie kształtowania świadomości narodowej dawny strój szlachty został przyjęty przez wszystkie grupy
+        społeczne i uznany za polski strój narodowy.</p>
+      <a target="_blank" href="https://pl.wikipedia.org/wiki/Polski_str%C3%B3j_narodowy">dowiedz się więcej</a>
+    </div>
+    <div class="lasowiak" title="strój lasowiacki">
+      <p>Lasowiacy, lub inaczej Lesiacy, to grupa etnograficzna zamieszkująca rozległe obszary leżące w widłach Wisły i
+        Sanu oraz na prawym jego brzegu. <br>
+        Stroje te jeszcze w latach dwudziestych XX w., zarówno w wersji codziennej, jak i odświętnej szyte były prawie w
+        całości z tkanin własnej roboty, z przewagą płócien.</p>
+      <a target="_blank" href="https://strojeludowe.net/stroje/lasowiacki/">dowiedz się więcej</a>
+    </div>
+    <div class="lowicki" title="strój łowicki">
+      <p>Strój ludowy z obszaru Mazowsza, przywdziewany przez grupę Księżaków łowickich.</p>
+      <a target="_blank" href="https://strojeludowe.net/stroje/lowicki/">dowiedz się więcej</a>
+    </div>
+    <div class="lubelski" title="strój lubelski">
+      <p>(inaczej krzczonowski) <br> polski strój ludowy, pochodzący ze wsi Krzczonów 30 km od Lublina. Strój według
+        Janusza Świeżego zakwalifikowany do strojów małopolskich (Krzczonów należał do XIX
+        wieku do diecezji krakowskiej). Odrębność i barwność stroju krzczonowskiego spowodowała, że na przełomie wieku
+        XIX i XX stał się reprezentacyjnym ubiorem ludowym Lubelszczyzny, dlatego popularnie nazywany jest strojem
+        lubelskim.
+
+        Do dziś w Krzczonowie kultywuje się żywą tradycję noszenia stroju regionalnego podczas uroczystości kościelnych
+        i państwowych, jest także doceniany i rozpoznawalny na całym świecie.</p>
+      <a target="_blank" href="https://strojeludowe.net/stroje/krzczonowski/">dowiedz się więcej</a>
+    </div>
+    <div class="rzeszowski" title="strój rzeszowski">
+      <p>Strój ludowy noszony w obszarze dorzecza dolnego Wisłoka i na lewym brzegu Sanu w środkowym jego biegu, używany
+        przez grupę etnograficzną Rzeszowiaków.</p>
+      <a target="_blank" href="https://strojeludowe.net/stroje/rzeszowski/">dowiedz się więcej</a>
+    </div>
+    <div class="krakowski" title="strój krakowski">
+      <p> strój ludowy grupy etnograficznej Krakowiaków zamieszkujących Małopolskę.
+        Stroje krakowskie można podzielić na dwa rodzaje, które różnią się pewnymi elementami oraz zdobieniami:</p>
+
+      <ul>
+        <li>strój Krakowiaków zachodnich zwany strojem krakowskim, uznany za strój narodowy (widoczny w galerii zdjęć)
+        </li>
+        <li>strój Krakowiaków wschodnich </li>
+      </ul>
+      <a target="_blank" href="https://www.etnozagroda.pl/krakowiacy">dowiedz się więcej</a>
     </div>
   </div>
   <footer>© 2022 Olga Tomczyk</footer>
-  <script src="../script.js"></script>
-  <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-  <!-- Magnific Popup core JS file -->
-  <script src="magnific-popup/jquery.magnific-popup.js"></script>
-  <script>$(document).ready(function () {
-      $('.photos-gallery').magnificPopup({
-        delegate: 'a', // child items selector, by clicking on it popup will open
-        type: 'image',
-        gallery: {
-          enabled: true
-        }
-        // other options
-      });
-    });</script>
+  <script src="../script.js"></script>
 </body>
 
 </html>

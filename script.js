@@ -1,5 +1,3 @@
-///// DARK MODE //////
-
 const body = document.getElementsByTagName('body')[0];
 const menu = document.querySelector('.menu');
 const dropdownButton = document.getElementsByTagName('button')[0];

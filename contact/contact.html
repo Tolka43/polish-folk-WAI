@@ -5,17 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
-  <!-- <link rel="manifest" href="/site.webmanifest"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script>
     $(function () {
       $(document).tooltip();
-    });
-  </script>
+    }); </script>
   <style>
     label {
       display: inline-block;
@@ -84,12 +82,15 @@
       </fieldset>
       <div class="form-element">
         <input type="checkbox" id="agreement" name="agreement" required>
-        <label class="agreement-checkbox"  for="agreement">*wyrażam zgodę na przetwarzanie danych osobowych</label>
+        <label class="agreement-checkbox" for="agreement">*wyrażam zgodę na przetwarzanie danych osobowych</label>
       </div>
-      <button class="submit-button" type="submit">wyślij</button>
+      <button id="opener" class="submit-button" type="submit">wyślij</button>
       <input class="reset-button" type="reset" value="wyczyść formularz">
 
+
     </form>
+
+
   </div>
   <footer>© 2022 Olga Tomczyk</footer>
   <script type="text/javascript" src="../script.js"></script>
