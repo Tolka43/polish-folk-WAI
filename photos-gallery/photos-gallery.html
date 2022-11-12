@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+  <!-- <link rel="manifest" href="/site.webmanifest"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+
+  <title>Tańce ludowe</title>
+</head>
+
+<body>
+  <nav>
+    <div class="menu">
+      <a class="for-big-desktop" href="../index.html">
+        <img class="nav-img" src="../img/nav-img.png" alt=""></a>
+      <a class="for-small-desktop" href="../index.html">
+        <img class="nav-img" src="../img/nav-img.png" alt=""></a>
+      <a class="menu-item main-menu-item" href="../index.html">strona główna</a>
+      <a class="menu-item" href="photos-gallery.html">galeria</a>
+      <div class="dropdown for-big-desktop">
+        <button class="dropdown-button">o nas</button>
+        <div class="dropdown-content">
+          <a href="../contact/contact.html">kontakt</a>
+        </div>
+      </div>
+      <a class="menu-item for-small-desktop" href="../contact/contact.html">kontakt</a>
+    </div>
+  </nav>
+  <div id="wrapper">
+    <div class="photos-gallery">
+      <div class="gallery-item">
+        <a target="_blank" href="../img/kontusz-szlachecki.jpg">
+          <img class="gallery-img" src="../img/kontusz-szlachecki.jpg" alt=""></a>
+        <div class="img-descr">kontusz szlachecki</div>
+      </div>
+      <div class="gallery-item">
+        <a target="_blank" href="../img/stroj-lasowiacki.jpg">
+          <img class="gallery-img" src="../img/stroj-lasowiacki.jpg" alt=""></a>
+        <div class="img-descr">strój lasowiacki</div>
+      </div>
+      <div class="gallery-item">
+        <a href="../img/stroj-lowicki.jpg" target="_blank">
+          <img class="gallery-img" src="../img/stroj-lowicki.jpg" alt=""></a>
+        <div class="img-descr">strój łowicki</div>
+      </div>
+      <div class="gallery-item">
+        <a target="_blank" href="../img/stroj-lubelski.jpg">
+          <img class="gallery-img" src="../img/stroj-lubelski.jpg" alt=""></a>
+        <div class="img-descr">strój lubelski</div>
+      </div>
+      <div class="gallery-item">
+        <a target="_blank" href="../img/stroj-rzeszowski.jpg">
+          <img class="gallery-img" src="../img/stroj-rzeszowski.jpg" alt=""></a>
+        <div class="img-descr">strój rzeszowski</div>
+      </div>
+      <div class="gallery-item">
+        <a target="_blank" href="../img/stroj-krakowski.jpg">
+          <img class="gallery-img" src="../img/stroj-krakowski.jpg" alt=""></a>
+        <div class="img-descr">strój krakowski</div>
+      </div>
+    </div>
+  </div>
+  <footer>© 2022 Olga Tomczyk</footer>
+  <script src="../script.js"></script>
+  <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <!-- Magnific Popup core JS file -->
+  <script src="magnific-popup/jquery.magnific-popup.js"></script>
+  <script>$(document).ready(function () {
+      $('.photos-gallery').magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'image',
+        gallery: {
+          enabled: true
+        }
+        // other options
+      });
+    });</script>
+</body>
+
+</html>

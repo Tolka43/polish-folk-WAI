@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+  <!-- <link rel="manifest" href="/site.webmanifest"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $(document).tooltip();
+    });
+  </script>
+  <style>
+    label {
+      display: inline-block;
+    }
+  </style>
+
+  <title>Tańce ludowe</title>
+</head>
+
+<body>
+  <nav>
+    <div class="menu">
+      <a class="for-big-desktop" href="../index.html">
+        <img class="nav-img" src="../img/nav-img.png" alt=""></a>
+      <a class="for-small-desktop" href="../index.html">
+        <img class="nav-img" src="../img/nav-img.png" alt=""></a>
+      <a class="menu-item main-menu-item" href="../index.html">strona główna</a>
+      <a class="menu-item" href="../photos-gallery/photos-gallery.html">galeria</a>
+      <div class="dropdown for-big-desktop">
+        <button class="dropdown-button">o nas</button>
+        <div class="dropdown-content">
+          <a href="contact.html">kontakt</a>
+        </div>
+      </div>
+      <a class="menu-item for-small-desktop" href="contact.html">kontakt</a>
+    </div>
+  </nav>
+  <div class="form-container">
+    <form action="receive.php" method="get">
+      <div class="form-header">
+        <p> Skontaktuj się z nami!</p>
+        <a href="../index.html" class="for-mobile-screen">X</a>
+      </div>
+      <div class="user-data-form">
+        <p class="user-data-label">imię:</p>
+        <input id="user-name" name="user-name" class="user-data-input" type="text">
+      </div>
+      <div class="user-data-form">
+        <p class="user-data-label">pseudonim:</p>
+        <input id="user-nickname" name="user-nickname" class="user-data-input" type="text">
+      </div>
+      <div class="user-data-form">
+        <p class="user-data-label">adres email:</p>
+        <input id="user-email" name="user-email" class="user-data-input" type="email">
+      </div>
+      <div>
+        <textarea name="message" id="user-message" cols="40" rows="2">napisz do nas...</textarea>
+      </div>
+      <select class="form-element" id="choose-folk-costume" name="choosed-folk-costume">
+        <option value="">Który strój ludowy najbardziej ci się podoba?</option>
+        <option value="kontusz-szlachecki">kontusz szlachecki</option>
+        <option value="stroj-lowicki">strój łowicki</option>
+        <option value="stroj-krakowski">strój krakowski</option>
+      </select>
+      <fieldset>
+        <legend title="będziesz otrzymywać ciekawostki na temat polskiej historii i kultury ludowej!">Czy chcesz zapisać
+          się do newslettera?</legend>
+        <div class="form-element">
+          <input type="radio" id="positive-answer" value="true" name="newsletter" checked>
+          <label for="positive-answer">Tak, chcę!</label>
+        </div>
+        <div class="form-element">
+          <input type="radio" id="negative-answer" value="false" name="newsletter">
+          <label for="negative-answer">Nie chcę</label>
+        </div>
+      </fieldset>
+      <div class="form-element">
+        <input type="checkbox" id="agreement" name="agreement" required>
+        <label class="agreement-checkbox"  for="agreement">*wyrażam zgodę na przetwarzanie danych osobowych</label>
+      </div>
+      <button class="submit-button" type="submit">wyślij</button>
+      <input class="reset-button" type="reset" value="wyczyść formularz">
+
+    </form>
+  </div>
+  <footer>© 2022 Olga Tomczyk</footer>
+  <script type="text/javascript" src="../script.js"></script>
+  <script type="text/javascript" src="contact.js"></script>
+</body>
+
+</html>
